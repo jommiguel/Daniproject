@@ -9,7 +9,7 @@ Academia estática em português de Portugal, preparada para publicação numa p
 3. Arrasta a pasta `dani-launchpad`, que contém `index.html` diretamente na raiz.
 4. Quando o Netlify devolver o endereço, abre-o e confirma a navegação, os exercícios e a atualização de uma página interior.
 
-O site ainda não foi publicado por esta entrega. Não há configuração de redirecionamento necessária: as sete páginas são ficheiros HTML reais.
+O site ainda não foi publicado por esta entrega. Não há configuração de redirecionamento necessária: as seis páginas são ficheiros HTML reais.
 
 ## Páginas
 
@@ -20,7 +20,6 @@ O site ainda não foi publicado por esta entrega. Não há configuração de red
 | laboratorio.html | Ordenação, construtor de prompts, código interativo, cenários, quiz, simulação GitHub e checklist |
 | prompts.html | Biblioteca, pesquisa e seleção de ChatGPT, Claude Code ou Codex |
 | projetos.html | Comparação de ideias, escolha e notas do problema |
-| perfil.html | Formação, competências transferíveis e exercícios de treino |
 | entrevistas.html | Simulação, respostas guardadas e apresentação de cinco minutos |
 
 ## Pré-visualizar

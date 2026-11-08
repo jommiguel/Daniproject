@@ -53,7 +53,7 @@
     [
       "ideias",
       "Explorar outras ideias",
-      "Com base em formação em Ciências Políticas, Relações Internacionais e Administração, compara Radar de Candidaturas, Observatório de Políticas Públicas e Radar Internacional. Avalia dificuldade, utilidade, fontes e valor numa entrevista.",
+      "Compara Radar de Candidaturas, Observatório de Políticas Públicas e Radar Internacional. Avalia dificuldade, utilidade, fontes e valor numa entrevista.",
     ],
     [
       "skills",
