@@ -56,4 +56,4 @@ Consulta `VALIDACAO.md` para os testes realmente executados e as limitações.
 
 ## Imagens e animações
 
-`assets/learning.webp` e `assets/lab.webp` são imagens originais geradas para este guia e otimizadas para carregamento local. `assets/processo.gif` é uma demonstração animada com reprodução voluntária, paragem e repetição. Não reproduz automaticamente. O favicon tem versões SVG, PNG de 32 px e ícone de 192 px.
+`assets/learning.webp` e `assets/lab.webp` são imagens originais geradas para este guia e otimizadas para carregamento local. `assets/processo.gif` e `assets/pedido.gif` são demonstrações animadas com reprodução voluntária, paragem e repetição. Não reproduzem automaticamente. O favicon tem versões SVG, PNG de 32 px e ícone de 192 px.

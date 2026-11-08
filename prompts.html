@@ -13,7 +13,6 @@
     <link href="favicon.svg" rel="icon" type="image/svg+xml" />
     <link href="base.css" rel="stylesheet" />
     <link href="studio.css" rel="stylesheet" />
-
     <script defer="True" src="js/progress.js"></script>
     <script defer="True" src="js/copy.js"></script>
     <script defer="True" src="js/prompt-library.js"></script>
@@ -124,6 +123,30 @@
         />
         <p id="search-status" role="status"></p>
       </div>
+      <section aria-labelledby="motion-title" class="motion-demo">
+        <div>
+          <p class="eyebrow">Como escrever um prompt</p>
+          <h2 id="motion-title">Dá contexto ao teu pedido.</h2>
+          <p>
+            Explica o contexto, indica o resultado esperado e diz como vais
+            verificar a resposta.
+          </p>
+        </div>
+        <img
+          alt="Três partes de um prompt: contexto, objetivo e verificação."
+          data-animation="assets/pedido.gif"
+          height="260"
+          id="process-animation"
+          src="assets/pedido.png"
+          width="720"
+        />
+        <div class="motion-controls">
+          <button aria-pressed="false" class="button primary" id="motion-play">
+            Reproduzir animação</button
+          ><button class="button" id="motion-restart">Repetir</button
+          ><span id="motion-status" role="status">Animação parada.</span>
+        </div>
+      </section>
       <div class="page-content">
         <section class="surface section" id="assistente">
           <div class="eyebrow">Escolhe a ferramenta</div>
@@ -167,7 +190,6 @@
         </section>
       </div>
     </main>
-
     <footer class="site-footer">
       <a class="brand" href="index.html">dani ↗</a>
       <p>Guia de aprendizagem do Dani</p>

@@ -43,7 +43,7 @@ Estes pares ultrapassam o limiar de 7:1 para texto normal do critério AAA 1.4.6
 
 Os resultados automáticos e os testes de teclado não constituem uma certificação de conformidade integral AA ou AAA. Falta validação humana completa com leitor de ecrã e utilizadores de tecnologias de apoio. Não foi executado um percurso completo em Safari ou Firefox. A tentativa WebKit ficou bloqueada por incompatibilidade entre o navegador instalado e o protocolo de automação; não é contabilizada como teste aprovado.
 
-Os conteúdos e recursos externos da V10 foram preservados; não foi revalidada a atualidade de todos os passos das ferramentas externas. Não foram feitos push, deploy nem testes de um endereço público. Não há simulação de avaliação por IA: quizzes têm correção local e a entrevista oferece pistas para autoavaliação.
+Os conteúdos e recursos externos da V10 foram preservados; não foi revalidada a atualidade de todos os passos das ferramentas externas. O código foi enviado para a branch `main` de `jommiguel/Daniproject`. Não foram feitos deploy nem testes de um endereço público do site. Não há simulação de avaliação por IA: quizzes têm correção local e a entrevista oferece pistas para autoavaliação.
 
 
 ## Revisão de navegação e identidade

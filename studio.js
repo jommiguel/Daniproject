@@ -223,10 +223,12 @@
   if (!animation) return;
   const play = document.querySelector("#motion-play");
   const status = document.querySelector("#motion-status");
+  const stillSource = animation.getAttribute("src");
+  const animatedSource = animation.dataset.animation || "assets/processo.gif";
   let playing = false;
   function setPlaying(next) {
     playing = next;
-    animation.src = playing ? "assets/processo.gif" : "assets/processo.png";
+    animation.src = playing ? animatedSource : stillSource;
     play.setAttribute("aria-pressed", String(playing));
     play.textContent = playing ? "Parar animação" : "Reproduzir animação";
     status.textContent = playing
@@ -235,7 +237,7 @@
   }
   play.addEventListener("click", () => setPlaying(!playing));
   document.querySelector("#motion-restart").addEventListener("click", () => {
-    animation.src = "assets/processo.png";
+    animation.src = stillSource;
     requestAnimationFrame(() => setPlaying(true));
   });
   document.addEventListener("visibilitychange", () => {
