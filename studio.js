@@ -47,32 +47,6 @@
     { passive: true },
   );
 
-  // Reveal only offscreen elements, so content is always readable without JavaScript.
-  if (
-    "IntersectionObserver" in window &&
-    !matchMedia("(prefers-reduced-motion: reduce)").matches
-  ) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove("waiting");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.05 },
-    );
-    document
-      .querySelectorAll("main .reveal, .page-content > section")
-      .forEach((element) => {
-        element.classList.add("reveal");
-        if (element.getBoundingClientRect().top > innerHeight && !location.hash)
-          element.classList.add("waiting");
-        observer.observe(element);
-      });
-  }
-
   // Keep the original assistant selector as a native fallback.
   const select = document.querySelector("#tool-choice");
   if (select) {
