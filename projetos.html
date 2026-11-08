@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#111210" name="theme-color" />
+    <meta
+      content="Dani Launchpad: aprende, constrói e apresenta o teu primeiro projeto com IA."
+      name="description"
+    />
+    <title>Projetos · Dani Launchpad</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="studio.css" rel="stylesheet" />
+
+    <script defer="True" src="js/progress.js"></script>
+    <script defer="True" src="js/copy.js"></script>
+    <script defer="True" src="studio.js"></script>
+    <link href="premium.css" rel="stylesheet" />
+    <link
+      href="assets/favicon-32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="assets/icon-192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link href="assets/icon-192.png" rel="apple-touch-icon" />
+  </head>
+  <body data-page="projetos">
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-play" viewbox="0 0 24 24">
+        <path d="m8 5 12 7-12 7V5Z"></path>
+      </symbol>
+      <symbol id="i-book" viewbox="0 0 24 24">
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+        ></path>
+      </symbol>
+      <symbol id="i-target" viewbox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <circle cx="12" cy="12" r="5"></circle>
+        <circle cx="12" cy="12" r="1"></circle>
+      </symbol>
+      <symbol id="i-check" viewbox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"></path>
+      </symbol>
+      <symbol id="i-code" viewbox="0 0 24 24">
+        <path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"></path>
+      </symbol>
+      <symbol id="i-link" viewbox="0 0 24 24">
+        <path
+          d="M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.7-1.7"
+        ></path>
+      </symbol></svg
+    ><a class="skip" href="#main">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <a aria-label="Dani Launchpad, início" class="brand" href="index.html"
+        ><svg aria-hidden="true" class="brand-mark" viewbox="0 0 40 40">
+          <rect fill="currentColor" height="40" rx="12" width="40"></rect>
+          <path
+            d="M13 11h7a9 9 0 0 1 0 18h-7z"
+            fill="none"
+            stroke="#151515"
+            stroke-width="4"
+          ></path>
+          <path
+            d="m25 8 7 7m-7 0 7-7"
+            stroke="#151515"
+            stroke-width="2"
+          ></path></svg
+        ><span>dani<small>O TEU GUIA</small></span></a
+      ><span aria-hidden="true" class="nav-location">Projetos</span
+      ><button
+        aria-controls="site-nav"
+        aria-expanded="false"
+        aria-label="Abrir navegação"
+        class="menu-toggle"
+      >
+        <span class="menu-label">Menu</span
+        ><svg aria-hidden="true" viewbox="0 0 24 24">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      </button>
+      <nav aria-label="Navegação principal" id="site-nav">
+        <a class="nav-link" href="index.html">Início</a
+        ><a class="nav-link" href="aprender.html">Aprender</a
+        ><a class="nav-link" href="laboratorio.html">Laboratório</a
+        ><a class="nav-link" href="prompts.html">Prompts</a
+        ><a aria-current="page" class="nav-link" href="projetos.html"
+          >Projetos</a
+        ><a class="nav-link" href="perfil.html">Perfil</a
+        ><a class="nav-link" href="entrevistas.html">Entrevistas</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <header class="page-hero">
+        <div>
+          <p class="eyebrow">Dani Launchpad <span>/ Projetos</span></p>
+          <h1>Escolhe o teu projeto.</h1>
+          <p class="lead">
+            Escolhe um problema que compreendes. Constrói uma primeira versão
+            pequena e demonstrável.
+          </p>
+        </div>
+        <div aria-hidden="true" class="page-number">04</div>
+      </header>
+      <section class="project-picker reveal">
+        <p class="eyebrow">A tua escolha</p>
+        <h2>Qual vais levar para a frente?</h2>
+        <div class="project-options">
+          <button class="button" data-project="Radar de Candidaturas">
+            Radar de Candidaturas</button
+          ><button
+            class="button"
+            data-project="Observatório de Políticas Públicas"
+          >
+            Observatório de Políticas Públicas</button
+          ><button class="button" data-project="Radar Internacional">
+            Radar Internacional
+          </button>
+        </div>
+        <p id="project-status" role="status">
+          Escolhe um projeto para orientar o teu percurso.
+        </p>
+        <label for="project-notes">O problema que quero resolver</label
+        ><textarea
+          id="project-notes"
+          placeholder="Para quem é? O que é difícil hoje? O que deve melhorar?"
+          rows="3"
+        ></textarea>
+        <p class="mini">
+          Guardado automaticamente neste navegador. Usa apenas informação não
+          confidencial.
+        </p>
+      </section>
+      <div class="page-content">
+        <section class="surface section" id="ideias">
+          <div class="eyebrow">Laboratório de ideias</div>
+          <h2>Projetos que fazem sentido para o teu percurso</h2>
+          <p>
+            O objetivo não é construir o projeto mais complexo. É escolher um
+            problema que consigas explicar, validar e demonstrar.
+          </p>
+          <div class="grid">
+            <div class="lesson-panel">
+              <span class="pill">Iniciante</span>
+              <h3>Radar de Candidaturas</h3>
+              <p>
+                Organiza vagas, estados, prazos e competências. Bom para
+                aprender formulários, filtros e persistência.
+              </p>
+              <p>
+                <strong>Extra IA:</strong> criar um prompt para comparar
+                competências da vaga com competências demonstradas, sem inventar
+                experiência.
+              </p>
+            </div>
+            <div class="lesson-panel">
+              <span class="pill">Intermédio</span>
+              <h3>Observatório de Políticas Públicas</h3>
+              <p>
+                Reúne propostas, datas e fontes oficiais num painel comparável.
+                Começa com dados fictícios ou introduzidos manualmente.
+              </p>
+              <p>
+                <strong>Extra IA:</strong> resumo de documentos com referências
+                e verificação humana.
+              </p>
+            </div>
+            <div class="lesson-panel">
+              <span class="pill">Intermédio</span>
+              <h3>Radar de Relações Internacionais</h3>
+              <p>
+                Organiza acontecimentos por país, tema e cronologia. Cada
+                registo deve mostrar fonte, data e grau de confiança.
+              </p>
+              <p>
+                <strong>Extra IA:</strong> comparar interpretações sem
+                apresentar opiniões como factos.
+              </p>
+            </div>
+          </div>
+          <div class="lesson-panel">
+            <h3>Qual deves escolher?</h3>
+            <p>
+              Começa pelo <strong>Radar de Candidaturas</strong> se o objetivo é
+              aprender Git, interfaces e IA sem backend. Escolhe um observatório
+              temático se quiseres destacar investigação, análise e pensamento
+              crítico. Uma versão pequena e funcional vale mais do que dez
+              funcionalidades inacabadas.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html">dani ↗</a>
+      <p>Guia de aprendizagem do Dani</p>
+      <a href="#main">Voltar ao topo ↑</a>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <noscript
+      ><p>
+        Ativa JavaScript para usar os exercícios e guardar o progresso. Podes
+        continuar a ler as aulas e navegar entre páginas.
+      </p></noscript
+    >
+  </body>
+</html>

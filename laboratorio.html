@@ -1,0 +1,451 @@
+<!doctype html>
+
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#111210" name="theme-color" />
+    <meta
+      content="Dani Launchpad: aprende, constrói e apresenta o teu primeiro projeto com IA."
+      name="description"
+    />
+    <title>Laboratório · Dani Launchpad</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="studio.css" rel="stylesheet" />
+    <script defer="True" src="js/progress.js"></script>
+    <script defer="True" src="js/copy.js"></script>
+    <script defer="True" src="js/practice.js"></script>
+    <script defer="True" src="js/workbench.js"></script>
+    <script defer="True" src="js/scenarios.js"></script>
+    <script defer="True" src="studio.js"></script>
+    <link href="premium.css" rel="stylesheet" />
+    <link
+      href="assets/favicon-32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="assets/icon-192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link href="assets/icon-192.png" rel="apple-touch-icon" />
+  </head>
+  <body data-page="laboratorio">
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-play" viewbox="0 0 24 24">
+        <path d="m8 5 12 7-12 7V5Z"></path>
+      </symbol>
+      <symbol id="i-book" viewbox="0 0 24 24">
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+        ></path>
+      </symbol>
+      <symbol id="i-target" viewbox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <circle cx="12" cy="12" r="5"></circle>
+        <circle cx="12" cy="12" r="1"></circle>
+      </symbol>
+      <symbol id="i-check" viewbox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"></path>
+      </symbol>
+      <symbol id="i-code" viewbox="0 0 24 24">
+        <path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"></path>
+      </symbol>
+      <symbol id="i-link" viewbox="0 0 24 24">
+        <path
+          d="M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.7-1.7"
+        ></path>
+      </symbol></svg
+    ><a class="skip" href="#main">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <a aria-label="Dani Launchpad, início" class="brand" href="index.html"
+        ><svg aria-hidden="true" class="brand-mark" viewbox="0 0 40 40">
+          <rect fill="currentColor" height="40" rx="12" width="40"></rect>
+          <path
+            d="M13 11h7a9 9 0 0 1 0 18h-7z"
+            fill="none"
+            stroke="#151515"
+            stroke-width="4"
+          ></path>
+          <path
+            d="m25 8 7 7m-7 0 7-7"
+            stroke="#151515"
+            stroke-width="2"
+          ></path></svg
+        ><span>dani<small>O TEU GUIA</small></span></a
+      ><span aria-hidden="true" class="nav-location">Laboratório</span
+      ><button
+        aria-controls="site-nav"
+        aria-expanded="false"
+        aria-label="Abrir navegação"
+        class="menu-toggle"
+      >
+        <span class="menu-label">Menu</span
+        ><svg aria-hidden="true" viewbox="0 0 24 24">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      </button>
+      <nav aria-label="Navegação principal" id="site-nav">
+        <a class="nav-link" href="index.html">Início</a
+        ><a class="nav-link" href="aprender.html">Aprender</a
+        ><a aria-current="page" class="nav-link" href="laboratorio.html"
+          >Laboratório</a
+        ><a class="nav-link" href="prompts.html">Prompts</a
+        ><a class="nav-link" href="projetos.html">Projetos</a
+        ><a class="nav-link" href="perfil.html">Perfil</a
+        ><a class="nav-link" href="entrevistas.html">Entrevistas</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <header class="page-hero">
+        <div>
+          <p class="eyebrow">Dani Launchpad <span>/ Laboratório</span></p>
+          <h1>Pratica com exercícios.</h1>
+          <p class="lead">
+            Aqui podes mexer à vontade. São simulações de treino, sem contas nem
+            dados reais.
+          </p>
+        </div>
+        <figure class="hero-image">
+          <img
+            alt=""
+            fetchpriority="high"
+            height="1024"
+            src="assets/lab.webp"
+            width="1536"
+          />
+          <figcaption>02 / LABORATÓRIO</figcaption>
+        </figure>
+      </header>
+      <nav aria-label="Nesta página" class="page-index">
+        <span>Nesta página</span
+        ><a href="#laboratorio">Aprender com as mãos. Não decorar comandos.</a
+        ><a href="#missao-real">Escolhe a melhor solução</a
+        ><a href="#aprendizagem">Aprender, praticar e defender o projeto</a
+        ><a href="#check-final">O teu projeto aguenta uma demonstração?</a>
+      </nav>
+      <section aria-labelledby="motion-title" class="motion-demo">
+        <div>
+          <p class="eyebrow">Demonstração animada</p>
+          <h2 id="motion-title">Testa cada alteração.</h2>
+          <p>
+            Define o resultado, faz uma alteração pequena e confirma que
+            funciona.
+          </p>
+        </div>
+        <img
+          alt="Três etapas: planear, construir e testar."
+          height="260"
+          id="process-animation"
+          src="assets/processo.png"
+          width="720"
+        />
+        <div class="motion-controls">
+          <button aria-pressed="false" class="button primary" id="motion-play">
+            Reproduzir animação</button
+          ><button class="button" id="motion-restart">Repetir</button
+          ><span id="motion-status" role="status">Animação parada.</span>
+        </div>
+      </section>
+      <div class="page-content">
+        <section
+          aria-labelledby="lab-title"
+          class="surface section"
+          id="laboratorio"
+        >
+          <div class="eyebrow">Dani Studio / Laboratório interativo</div>
+          <h2 id="lab-title">Aprender com as mãos. Não decorar comandos.</h2>
+          <p>
+            Três exercícios reais para perceberes a lógica de um projeto. Podes
+            arrastar as peças no computador ou selecionar e clicar no destino no
+            telemóvel e com teclado.
+          </p>
+          <div class="interactive-workbench" id="flow-workbench">
+            <div class="workbench-head">
+              <h3>Missão 01 — Ordena o teu primeiro projeto</h3>
+              <span>5 decisões · Do zero ao GitHub</span>
+            </div>
+            <p>
+              Arrasta os passos para a ordem correta. Se preferires, seleciona
+              um passo e depois escolhe a posição. Podes alterar a ordem quantas
+              vezes quiseres.
+            </p>
+            <div class="flow-grid">
+              <div
+                aria-label="Passos disponíveis"
+                class="flow-zone"
+                id="flow-bank"
+              >
+                <h4>Peças disponíveis</h4>
+                <div class="flow-source" id="flow-source"></div>
+              </div>
+              <div
+                aria-label="Ordem do projeto"
+                class="flow-zone"
+                id="flow-target"
+              >
+                <h4>O teu plano</h4>
+                <div class="flow-slots" id="flow-slots"></div>
+              </div>
+            </div>
+            <div class="flow-actions">
+              <button class="button" id="flow-check" type="button">
+                Validar ordem</button
+              ><button class="button" id="flow-reset" type="button">
+                Recomeçar
+              </button>
+            </div>
+            <p
+              aria-live="polite"
+              class="flow-feedback"
+              id="flow-feedback"
+              role="status"
+            ></p>
+            <details class="coach-details">
+              <summary>Porque é que esta ordem importa?</summary>
+              <p>
+                Primeiro defines o problema; depois preparas o repositório e o
+                ambiente. Pedes à IA uma tarefa pequena, testas o resultado e só
+                então guardas/publicas uma versão. Assim consegues perceber e
+                explicar cada decisão.
+              </p>
+            </details>
+          </div>
+          <div class="interactive-workbench">
+            <div class="workbench-head">
+              <h3>Missão 02 — Aprende a escrever um bom prompt</h3>
+              <span>Construtor de instruções</span>
+            </div>
+            <p>
+              Escolhe um objetivo e constrói um prompt que podes copiar para o
+              Claude Code ou Codex. Não executa código: ensina-te a pedir
+              alterações com controlo.
+            </p>
+            <label for="prompt-goal"
+              ><strong>O que queres construir?</strong></label
+            >
+            <select
+              class="button"
+              id="prompt-goal"
+              style="
+                display: block;
+                width: 100%;
+                margin: 10px 0 16px;
+                max-width: 650px;
+              "
+            >
+              <option value="form">Formulário para guardar candidaturas</option>
+              <option value="filter">Filtro por estado da candidatura</option>
+              <option value="source">
+                Registo de fontes para políticas públicas
+              </option>
+              <option value="access">
+                Melhorar acessibilidade e navegação por teclado
+              </option>
+            </select>
+            <label for="prompt-level"
+              ><strong>Como queres que a IA trabalhe?</strong></label
+            >
+            <select
+              class="button"
+              id="prompt-level"
+              style="
+                display: block;
+                width: 100%;
+                margin: 10px 0 16px;
+                max-width: 650px;
+              "
+            >
+              <option value="guide">
+                Explica e espera pela minha autorização
+              </option>
+              <option value="review">
+                Analisa e propõe alterações, sem editar
+              </option>
+            </select>
+            <div class="terminal"><code id="prompt-builder-output"></code></div>
+            <button
+              class="button"
+              id="prompt-builder-copy"
+              style="margin-top: 12px"
+              type="button"
+            >
+              Copiar prompt construído
+            </button>
+            <p
+              aria-live="polite"
+              class="flow-feedback"
+              id="prompt-builder-feedback"
+              role="status"
+            ></p>
+          </div>
+          <div class="interactive-workbench">
+            <div class="workbench-head">
+              <h3>Missão 03 — Do código ao ecrã</h3>
+              <span>Experimenta sem estragar nada</span>
+            </div>
+            <p>
+              Altera o texto do botão e observa o resultado. Isto demonstra a
+              ligação entre código, interface e comportamento.
+            </p>
+            <div class="editor-preview">
+              <div>
+                <strong>O teu código (simulado)</strong>
+                <pre id="code-preview"></pre>
+              </div>
+              <div>
+                <strong>Pré-visualização</strong>
+                <div class="mockapp">
+                  <label for="demo-label">Texto do botão</label
+                  ><input
+                    id="demo-label"
+                    maxlength="40"
+                    value="Guardar candidatura"
+                  /><button id="demo-action" type="button">
+                    Guardar candidatura
+                  </button>
+                  <p id="demo-result" role="status">
+                    Experimenta clicar no botão.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="workbench-note">
+              Nesta simulação, o texto é atualizado com JavaScript. Num projeto
+              real, deves rever o código e testar o formulário completo.
+            </p>
+          </div>
+          <div class="eyebrow">Plano de evolução</div>
+          <h3>Um projeto pequeno pode tornar-se um portefólio forte</h3>
+          <div class="track-grid">
+            <div class="track-item">
+              <span class="index">01 / MVP</span
+              ><strong>Registar candidaturas</strong
+              ><small>Formulário, lista, estado e armazenamento local.</small>
+            </div>
+            <div class="track-item">
+              <span class="index">02 / Qualidade</span
+              ><strong>Testar o que falha</strong
+              ><small
+                >Campos vazios, duplicados, teclado, 320 px e mensagens
+                claras.</small
+              >
+            </div>
+            <div class="track-item">
+              <span class="index">03 / Especialização</span
+              ><strong>Aplicar Ciências Políticas</strong
+              ><small
+                >Fontes, datas, temas, evidências e síntese crítica.</small
+              >
+            </div>
+            <div class="track-item">
+              <span class="index">04 / Entrevista</span
+              ><strong>Defender as decisões</strong
+              ><small
+                >Mostrar problema, solução, papel da IA, testes e
+                limitações.</small
+              >
+            </div>
+          </div>
+        </section>
+        <section class="surface section" id="missao-real">
+          <div class="eyebrow">MISSÃO INTERATIVA · 06</div>
+          <h2>Escolhe a melhor solução</h2>
+          <p>
+            Estás a construir o Radar de Candidaturas. Escolhe a decisão que
+            tomarias em cada situação e descobre a consequência. Lê cada
+            situação, escolhe uma resposta e vê a explicação.
+          </p>
+          <div aria-live="polite" class="lesson-panel" id="scenario">
+            <p class="learning-label" id="scenario-progress">Cenário 1 de 4</p>
+            <h3 id="scenario-title"></h3>
+            <p id="scenario-body"></p>
+            <div class="scenario-choices" id="scenario-choices"></div>
+            <p id="scenario-feedback" role="status"></p>
+            <button class="button" hidden="" id="scenario-next">
+              Próximo cenário
+            </button>
+          </div>
+          <h3>Do exercício ao portefólio</h3>
+          <p>
+            Quando terminares, documenta uma decisão, uma falha detetada e uma
+            melhoria. Usa esses exemplos para explicar o teu trabalho na
+            entrevista.
+          </p>
+        </section>
+        <section
+          aria-labelledby="apr-title"
+          class="surface section"
+          id="aprendizagem"
+        >
+          <div class="eyebrow">Centro de aprendizagem</div>
+          <h2 id="apr-title">Aprender, praticar e defender o projeto</h2>
+          <p>
+            Experimenta as demonstrações de cliques e responde às perguntas. São
+            simulações educativas, não capturas reais das interfaces.
+          </p>
+          <h3>Simulação: criar um repositório GitHub</h3>
+          <div aria-live="polite" class="surface" id="walkthrough">
+            <p id="walk-counter">Passo 1 de 5</p>
+            <strong id="walk-title">Abre github.com</strong>
+            <p id="walk-desc">Entra na tua conta GitHub no navegador.</p>
+            <div
+              aria-label="Simulação ilustrativa de interface GitHub"
+              id="walk-demo"
+              style="
+                padding: 24px;
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                background: #202228;
+                margin: 12px 0;
+                min-height: 90px;
+              "
+            >
+              github.com · Sign in
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <button class="button" id="walk-prev">Anterior</button
+              ><button class="button" id="walk-next">Seguinte</button
+              ><button class="button" id="walk-restart">Repetir</button>
+            </div>
+          </div>
+          <h3 style="margin-top: 24px">
+            Teste rápido: Git, IA e boas práticas
+          </h3>
+          <div aria-live="polite" id="dani-quiz"></div>
+        </section>
+        <section class="surface section" id="check-final">
+          <div class="eyebrow">CHECKPOINT · Antes de mostrar a alguém</div>
+          <h2>O teu projeto aguenta uma demonstração?</h2>
+          <p>
+            Marca apenas o que verificaste mesmo. O resultado é guardado neste
+            navegador.
+          </p>
+          <div class="launch-checks" id="launch-checks"></div>
+          <p aria-live="polite" id="launch-result"></p>
+          <button class="button" id="launch-reset">Recomeçar checklist</button>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <a class="brand" href="index.html">dani ↗</a>
+      <p>Guia de aprendizagem do Dani</p>
+      <a href="#main">Voltar ao topo ↑</a>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <noscript
+      ><p>
+        Ativa JavaScript para usar os exercícios e guardar o progresso. Podes
+        continuar a ler as aulas e navegar entre páginas.
+      </p></noscript
+    >
+  </body>
+</html>

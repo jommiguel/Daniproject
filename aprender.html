@@ -1,0 +1,811 @@
+<!doctype html>
+
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#111210" name="theme-color" />
+    <meta
+      content="Dani Launchpad: aprende, constrói e apresenta o teu primeiro projeto com IA."
+      name="description"
+    />
+    <title>Aprender · Dani Launchpad</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="studio.css" rel="stylesheet" />
+
+    <script defer="True" src="js/progress.js"></script>
+    <script defer="True" src="js/copy.js"></script>
+    <script defer="True" src="js/assistant.js"></script>
+    <script defer="True" src="studio.js"></script>
+    <link href="premium.css" rel="stylesheet" />
+    <link
+      href="assets/favicon-32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="assets/icon-192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link href="assets/icon-192.png" rel="apple-touch-icon" />
+  </head>
+  <body data-page="aprender">
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-play" viewbox="0 0 24 24">
+        <path d="m8 5 12 7-12 7V5Z"></path>
+      </symbol>
+      <symbol id="i-book" viewbox="0 0 24 24">
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+        ></path>
+      </symbol>
+      <symbol id="i-target" viewbox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <circle cx="12" cy="12" r="5"></circle>
+        <circle cx="12" cy="12" r="1"></circle>
+      </symbol>
+      <symbol id="i-check" viewbox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"></path>
+      </symbol>
+      <symbol id="i-code" viewbox="0 0 24 24">
+        <path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"></path>
+      </symbol>
+      <symbol id="i-link" viewbox="0 0 24 24">
+        <path
+          d="M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.7-1.7"
+        ></path>
+      </symbol></svg
+    ><a class="skip" href="#main">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <a aria-label="Dani Launchpad, início" class="brand" href="index.html"
+        ><svg aria-hidden="true" class="brand-mark" viewbox="0 0 40 40">
+          <rect fill="currentColor" height="40" rx="12" width="40"></rect>
+          <path
+            d="M13 11h7a9 9 0 0 1 0 18h-7z"
+            fill="none"
+            stroke="#151515"
+            stroke-width="4"
+          ></path>
+          <path
+            d="m25 8 7 7m-7 0 7-7"
+            stroke="#151515"
+            stroke-width="2"
+          ></path></svg
+        ><span>dani<small>O TEU GUIA</small></span></a
+      ><span aria-hidden="true" class="nav-location">Aprender</span
+      ><button
+        aria-controls="site-nav"
+        aria-expanded="false"
+        aria-label="Abrir navegação"
+        class="menu-toggle"
+      >
+        <span class="menu-label">Menu</span
+        ><svg aria-hidden="true" viewbox="0 0 24 24">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      </button>
+      <nav aria-label="Navegação principal" id="site-nav">
+        <a class="nav-link" href="index.html">Início</a
+        ><a aria-current="page" class="nav-link" href="aprender.html"
+          >Aprender</a
+        ><a class="nav-link" href="laboratorio.html">Laboratório</a
+        ><a class="nav-link" href="prompts.html">Prompts</a
+        ><a class="nav-link" href="projetos.html">Projetos</a
+        ><a class="nav-link" href="perfil.html">Perfil</a
+        ><a class="nav-link" href="entrevistas.html">Entrevistas</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <header class="page-hero">
+        <div>
+          <p class="eyebrow">Dani Launchpad <span>/ Aprender</span></p>
+          <h1>Aprende a criar um site.</h1>
+          <p class="lead">
+            Do primeiro ficheiro ao primeiro site. Avança ao teu ritmo e
+            verifica cada resultado.
+          </p>
+        </div>
+        <div aria-hidden="true" class="page-number">01</div>
+      </header>
+      <div class="learning-status">
+        <span>Progresso do guia</span
+        ><strong aria-live="polite" id="counter"></strong
+        ><a href="index.html">Ver resumo</a>
+      </div>
+      <nav aria-label="Fases de aprendizagem" class="chapter-nav">
+        <a href="#preparar">01 Preparar o computador</a
+        ><a href="#github">02 Criar o repositório</a
+        ><a href="#vscode">03 Ligar VS Code ao GitHub</a
+        ><a href="#ia">04 Usar IA como mentor</a
+        ><a href="#produto">05 Resolver um problema real</a
+        ><a href="#construir">06 Construir sem complicar</a
+        ><a href="#testar">07 Testar a sério</a
+        ><a href="#publicar">08 Publicar e partilhar</a>
+      </nav>
+      <div class="page-content">
+        <section class="surface section" id="preparar">
+          <div class="eyebrow">Fase 01</div>
+          <h2>Preparar o computador</h2>
+          <p>Instala tudo a partir dos sites oficiais.</p>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="0" type="checkbox" /><span
+                >Instala o
+                <a href="https://code.visualstudio.com/">VS Code</a>.<small
+                  >O programa onde vais trabalhar.</small
+                ></span
+              ></label
+            ><label class="task"
+              ><input data-task-index="1" type="checkbox" /><span
+                >Instala o
+                <a href="https://git-scm.com/downloads">Git</a>.<small
+                  >Permite guardar versões do trabalho.</small
+                ></span
+              ></label
+            ><label class="task"
+              ><input data-task-index="2" type="checkbox" /><span
+                >Instala o <a href="https://nodejs.org/">Node.js LTS</a>.<small
+                  >Útil para projetos futuros; este projeto básico não depende
+                  dele.</small
+                ></span
+              ></label
+            ><label class="task"
+              ><input data-task-index="3" type="checkbox" /><span
+                >Abre VS Code → Terminal → New Terminal e executa
+                <code>git --version</code>, <code>node --version</code> e
+                <code>npm --version</code> um de cada vez.<small
+                  >Deves ver números de versão. Se falhar, reinicia o VS
+                  Code.</small
+                ></span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="preparar">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="github">
+          <div class="eyebrow">Fase 02</div>
+          <h2>Criar o repositório</h2>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="4" type="checkbox" /><span
+                >Cria uma conta em <a href="https://github.com">GitHub</a> e
+                confirma o email.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="5" type="checkbox" /><span
+                >Ativa autenticação de dois fatores e guarda os códigos de
+                recuperação.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="6" type="checkbox" /><span
+                >Clica em New repository → nome
+                <code>radar-candidaturas</code> → Public → Add README → Create
+                repository.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="7" type="checkbox" /><span
+                >Clica em Code → HTTPS → copia o URL.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="github">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="vscode">
+          <div class="eyebrow">Fase 03</div>
+          <h2>Ligar VS Code ao GitHub</h2>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="8" type="checkbox" /><span
+                >No VS Code, abre Command Palette e escolhe
+                <strong>Git: Clone</strong>.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="9" type="checkbox" /><span
+                >Cola o URL HTTPS, escolhe uma pasta e abre o repositório
+                clonado.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="10" type="checkbox" /><span
+                >Inicia sessão no GitHub se for pedido e confirma que vês
+                <code>README.md</code>.</span
+              ></label
+            >
+          </div>
+          <p class="note">
+            Não coloques chaves, tokens, passwords ou dados reais de candidatos
+            no GitHub.
+          </p>
+          <div class="step-prompt" data-phase="vscode">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="ia">
+          <div class="eyebrow">Fase 04</div>
+          <h2>Usar IA como mentor</h2>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="11" type="checkbox" /><span
+                >Escolhe
+                <a href="https://developers.openai.com/codex/">Codex</a> ou
+                <a href="https://code.claude.com/docs/">Claude Code</a> e segue
+                a instalação oficial.<small
+                  >Algumas opções exigem conta/plano compatível.</small
+                ></span
+              ></label
+            ><label class="task"
+              ><input data-task-index="12" type="checkbox" /><span
+                >Abre a pasta do repositório e pede à IA para explicar os
+                ficheiros, sem os alterar.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="13" type="checkbox" /><span
+                >Copia o prompt de mentoria da biblioteca e pede uma tarefa de
+                cada vez.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="ia">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="produto">
+          <div class="eyebrow">Fase 05</div>
+          <h2>Resolver um problema real</h2>
+          <p>
+            <strong>Projeto sugerido:</strong> Radar de Candidaturas. Ajuda a
+            acompanhar vagas, prazos e estados sem folhas dispersas.
+          </p>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="14" type="checkbox" /><span
+                >Define quem usa a app, qual é o problema e o que melhora.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="15" type="checkbox" /><span
+                >Escolhe só 4 funções: adicionar candidatura, listar, mudar
+                estado e filtrar.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="16" type="checkbox" /><span
+                >Decide guardar dados no próprio navegador com
+                <code>localStorage</code>, sem login ou backend.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="17" type="checkbox" /><span
+                >Escreve critérios de sucesso: uso simples, telemóvel funcional
+                e dados persistentes no mesmo navegador.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="produto">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="construir">
+          <div class="eyebrow">Fase 06</div>
+          <h2>Construir sem complicar</h2>
+          <p>
+            Usa HTML, CSS e JavaScript vanilla. Primeiro a funcionalidade,
+            depois o polimento visual.
+          </p>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="18" type="checkbox" /><span
+                >Pede à IA três ficheiros: <code>index.html</code>,
+                <code>styles.css</code> e <code>app.js</code>.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="19" type="checkbox" /><span
+                >Abre o HTML no navegador e confirma que aparece.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="20" type="checkbox" /><span
+                >Implementa formulário e lista; testa com dados fictícios.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="21" type="checkbox" /><span
+                >Adiciona filtros e mudança de estado; testa novamente.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="22" type="checkbox" /><span
+                >Adiciona <code>localStorage</code> e confirma persistência após
+                atualizar.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="23" type="checkbox" /><span
+                >Aplica os prompts de design system, acessibilidade e código
+                legível da biblioteca.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="construir">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="testar">
+          <div class="eyebrow">Fase 07</div>
+          <h2>Testar a sério</h2>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="24" type="checkbox" /><span
+                >Cria três candidaturas fictícias, edita, filtra e atualiza a
+                página.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="25" type="checkbox" /><span
+                >Testa com campos vazios, links inválidos e texto longo.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="26" type="checkbox" /><span
+                >Testa a 320 px, em tablet e desktop; evita scroll
+                horizontal.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="27" type="checkbox" /><span
+                >Usa Tab, Shift+Tab, Enter e Espaço; confirma foco
+                visível.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="28" type="checkbox" /><span
+                >Verifica contraste, labels, erros e movimento reduzido; usa axe
+                ou Lighthouse como apoio, não como garantia AA.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="testar">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="publicar">
+          <div class="eyebrow">Fase 08</div>
+          <h2>Publicar e partilhar</h2>
+          <div data-tasks="">
+            <label class="task"
+              ><input data-task-index="29" type="checkbox" /><span
+                >Atualiza o README: problema, solução, funcionalidades,
+                instruções, limites e papel da IA.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="30" type="checkbox" /><span
+                >No Source Control do VS Code, revê alterações, faz Commit e
+                Push/Sync.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="31" type="checkbox" /><span
+                >No GitHub, abre Settings → Pages → Deploy from a branch → main
+                → /(root) → Save.</span
+              ></label
+            ><label class="task"
+              ><input data-task-index="32" type="checkbox" /><span
+                >Espera pela publicação e abre o URL mostrado em Pages; testa no
+                telemóvel e em janela privada.</span
+              ></label
+            >
+          </div>
+          <div class="step-prompt" data-phase="publicar">
+            <strong>Precisas de ajuda nesta etapa?</strong>
+            <p>O prompt adapta-se à ferramenta escolhida acima.</p>
+            <pre class="step-prompt-text"></pre>
+            <button class="button step-copy" type="button">
+              Copiar prompt desta etapa
+            </button>
+          </div>
+        </section>
+        <section class="surface section" id="academia">
+          <div class="eyebrow">Aprendizagem passo a passo</div>
+          <h2>Aprende a construir. Não apenas a copiar.</h2>
+          <p>
+            Escolhe o teu assistente, segue os passos e copia os prompts. Cada
+            tarefa inclui o que fazer, o que deves ver e o que fazer se falhar.
+            Não precisas de saber programar antes de começar.
+          </p>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 01</span>
+              <h3>O que são Git, GitHub, VS Code e IA?</h3>
+            </div>
+            <p>
+              <strong>VS Code</strong> é a secretária onde editas os ficheiros.
+              <strong>Git</strong> é o histórico das alterações.
+              <strong>GitHub</strong> guarda uma cópia online desse histórico.
+              <strong>Claude Code ou Codex</strong> são assistentes que podem
+              ler e propor alterações ao código, dentro das permissões
+              disponíveis.
+            </p>
+            <p>
+              <strong>Exemplo:</strong> pedes um formulário de candidatura → a
+              IA propõe código → tu verificas o resultado → guardas uma versão
+              com Git → envias para o GitHub. A IA não substitui a verificação.
+            </p>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 02</span>
+              <h3>Instalar e verificar as ferramentas</h3>
+            </div>
+            <ol class="lesson-steps">
+              <li>
+                Abre os links oficiais de
+                <a href="https://code.visualstudio.com/">VS Code</a>,
+                <a href="https://git-scm.com/downloads">Git</a> e
+                <a href="https://nodejs.org/en/download">Node.js LTS</a>.
+                Escolhe a versão para o teu sistema operativo.
+              </li>
+              <li>
+                Instala as aplicações seguindo o instalador. Fecha e volta a
+                abrir o VS Code.
+              </li>
+              <li>
+                No VS Code, escolhe <strong>Terminal → New Terminal</strong> e
+                executa os comandos seguintes, um de cada vez.
+              </li>
+            </ol>
+            <div class="terminal">
+              <code>git --version node --version npm --version</code>
+            </div>
+            <p>
+              <strong>Resultado esperado:</strong> cada comando mostra um número
+              de versão. Se aparecer “command not found”, verifica a instalação
+              e reinicia o terminal. Não copies comandos aleatórios de fóruns
+              sem perceber o que fazem.
+            </p>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 03</span>
+              <h3>Criar o repositório e abrir no VS Code</h3>
+            </div>
+            <ol class="lesson-steps">
+              <li>
+                Em <a href="https://github.com/new">GitHub → New repository</a>,
+                escolhe <code>radar-candidaturas</code>, visibilidade
+                <strong>Public</strong> e marca <strong>Add a README</strong>.
+              </li>
+              <li>
+                Carrega em <strong>Create repository</strong>. Abre o menu
+                <strong>Code</strong> e copia o endereço HTTPS.
+              </li>
+              <li>
+                No VS Code, abre a paleta de comandos (<strong
+                  >Ctrl+Shift+P</strong
+                >
+                no Windows/Linux ou <strong>Cmd+Shift+P</strong> no Mac),
+                procura <strong>Git: Clone</strong> e cola o endereço.
+              </li>
+              <li>
+                Escolhe uma pasta, abre o projeto e confirma que existe
+                <code>README.md</code>.
+              </li>
+            </ol>
+            <div class="example-screen">
+              <div class="screen-bar">
+                Simulação ilustrativa · GitHub / novo repositório
+              </div>
+              <div class="screen-content">
+                <span class="mock-control"
+                  >Repository name: radar-candidaturas</span
+                ><span class="mock-control">Public</span
+                ><span class="mock-control highlight">Create repository</span>
+              </div>
+            </div>
+            <p class="mini">
+              Os nomes e a posição dos botões podem mudar na interface real.
+              Esta demonstração não controla a tua conta.
+            </p>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 04</span>
+              <h3>Claude Code ou Codex: qual é a diferença?</h3>
+            </div>
+            <p>
+              Ambos ajudam a compreender, planear, escrever e rever código. O
+              <strong>Claude Code</strong> é um agente de programação da
+              Anthropic; o <strong>Codex</strong> é um agente de programação da
+              OpenAI. O acesso e a instalação dependem da plataforma, versão e
+              conta. Segue sempre a documentação oficial atualizada.
+            </p>
+            <p>
+              <a href="https://code.claude.com/docs/en/overview"
+                >Documentação oficial Claude Code</a
+              >
+              ·
+              <a href="https://developers.openai.com/codex/"
+                >Documentação oficial Codex</a
+              >
+            </p>
+            <ol class="lesson-steps">
+              <li>Escolhe um dos dois. Não precisas de instalar ambos.</li>
+              <li>
+                Segue o guia oficial de instalação e autenticação. Nunca
+                partilhes passwords, tokens ou chaves no chat.
+              </li>
+              <li>
+                Abre a pasta <code>radar-candidaturas</code> no VS Code e inicia
+                o assistente no contexto dessa pasta, conforme a ferramenta
+                escolhida.
+              </li>
+              <li>
+                Começa por um pedido <strong>apenas de leitura</strong>: o
+                assistente deve explicar o projeto antes de alterar ficheiros.
+              </li>
+            </ol>
+            <div class="copyline">
+              <button
+                class="button"
+                data-copy="Sou iniciante absoluto. Antes de escrever código, analisa apenas os ficheiros desta pasta e explica-me, em português de Portugal, o que existe e o que falta. Não edites nada. Mostra o próximo passo e espera pela minha confirmação."
+              >
+                Copiar primeiro prompt</button
+              ><span class="mini">Cola-o no Claude Code ou Codex.</span>
+            </div>
+            <p>
+              <strong>Regra de ouro:</strong> lê as alterações propostas,
+              confirma o que o agente vai executar e pede explicações para
+              comandos que não compreendes.
+            </p>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 05</span>
+              <h3>O primeiro pedido que cria valor</h3>
+            </div>
+            <p>
+              Não peças “faz-me uma aplicação perfeita”. Começa por um objetivo
+              pequeno, verificável e com critérios de aceitação.
+            </p>
+            <div class="terminal">
+              <code
+                >Quero construir uma aplicação simples chamada Radar de
+                Candidaturas. Objetivo: registar candidaturas a empregos e
+                acompanhar o estado de cada uma. Tecnologias: HTML, CSS e
+                JavaScript vanilla, sem backend nem dependências. Primeira
+                tarefa: cria apenas a estrutura inicial com index.html,
+                styles.css e app.js. Antes de alterar ficheiros: 1. Explica o
+                plano em 5 pontos. 2. Diz-me quais os ficheiros a criar. 3.
+                Indica como testar no navegador. 4. Espera pela minha
+                confirmação. Usa português de Portugal, código legível e design
+                mobile-first.</code
+              >
+            </div>
+            <button
+              class="button"
+              data-copy="Quero construir uma aplicação simples chamada Radar de Candidaturas. Objetivo: registar candidaturas a empregos e acompanhar o estado de cada uma. Tecnologias: HTML, CSS e JavaScript vanilla, sem backend nem dependências. Primeira tarefa: cria apenas a estrutura inicial com index.html, styles.css e app.js. Antes de alterar ficheiros: 1. Explica o plano em 5 pontos. 2. Diz-me quais os ficheiros a criar. 3. Indica como testar no navegador. 4. Espera pela minha confirmação. Usa português de Portugal, código legível e design mobile-first."
+            >
+              Copiar prompt completo
+            </button>
+            <p>
+              <strong>Como validar:</strong> abre <code>index.html</code> no
+              navegador, verifica se não há erros na consola e confirma que a
+              página se adapta ao telemóvel.
+            </p>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 06</span>
+              <h3>Melhorar a aplicação</h3>
+            </div>
+            <ol class="lesson-steps">
+              <li>
+                <strong>Funcionalidade:</strong> adicionar, editar e apagar
+                candidaturas, mudar o estado e filtrar resultados.
+              </li>
+              <li>
+                <strong>Persistência:</strong> guardar no
+                <code>localStorage</code>, explicando que os dados ficam neste
+                navegador e podem desaparecer se o armazenamento for limpo.
+              </li>
+              <li>
+                <strong>Qualidade:</strong> validar campos, mostrar mensagens de
+                erro úteis e impedir duplicações acidentais quando fizer
+                sentido.
+              </li>
+              <li>
+                <strong>Design:</strong> tokens de 4/8 px, contraste, estados de
+                foco, layout mobile-first e zero decoração gratuita.
+              </li>
+              <li>
+                <strong>QA:</strong> testar com lista vazia, texto longo, erros,
+                teclado, 320 px e dados fictícios.
+              </li>
+            </ol>
+            <button
+              class="button"
+              data-copy="Audita o Radar de Candidaturas em cinco dimensões: funcionalidade, persistência, acessibilidade WCAG 2.2 AA, mobile-first a partir de 320 px e segurança. Primeiro apresenta uma tabela com problema, gravidade, forma de reproduzir e correção sugerida. Não afirmes que executaste testes que não realizaste. Não alteres ficheiros sem a minha confirmação."
+            >
+              Copiar prompt de auditoria
+            </button>
+          </div>
+          <div class="lesson-panel">
+            <div class="lesson-header">
+              <span class="lesson-number">AULA 07</span>
+              <h3>Guardar alterações e publicar</h3>
+            </div>
+            <p>
+              Depois de testares, abre <strong>Source Control</strong> no VS
+              Code, revê os ficheiros alterados, escreve uma mensagem clara como
+              <code>feat: adicionar formulário de candidaturas</code>, faz
+              <strong>Commit</strong> e depois
+              <strong>Push / Sync Changes</strong>.
+            </p>
+            <p>
+              Para um site estático, podes publicar em
+              <strong>GitHub Pages</strong> nas definições do repositório:
+              <strong
+                >Settings → Pages → Deploy from a branch → main / root →
+                Save</strong
+              >, quando essa opção estiver disponível. Aguarda pela publicação e
+              testa o URL em janela privada.
+            </p>
+            <p>
+              <strong>Antes de publicar:</strong> remove dados pessoais,
+              credenciais, chaves e qualquer informação que não devas expor.
+            </p>
+          </div>
+        </section>
+        <section class="surface section" id="recursos">
+          <div class="eyebrow">Aprender com fontes reais</div>
+          <h2>Vídeos e guias para começar</h2>
+          <p>
+            Recursos oficiais e introdutórios. Alguns estão em inglês; usa
+            legendas e pede ao ChatGPT para explicar termos que não percebas. Os
+            links abrem noutra página.
+          </p>
+          <div class="resource-row">
+            <svg class="dani-icon"><use href="#i-play"></use></svg>
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=NUELGzIHT-I"
+                rel="noopener noreferrer"
+                target="_blank"
+                >GitHub — Guia completo para iniciantes</a
+              >
+              <p>
+                Vídeo oficial do GitHub. Vai diretamente ao capítulo
+                <strong>22:56</strong> para criar o primeiro repositório e ao
+                <strong>47:14</strong> para melhorar o perfil.
+              </p>
+              <span class="pill">Vídeo · Git e GitHub</span>
+            </div>
+          </div>
+          <div class="resource-row">
+            <svg class="dani-icon"><use href="#i-play"></use></svg>
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=r8jQ9hVA2qs"
+                rel="noopener noreferrer"
+                target="_blank"
+                >GitHub — Introdução ao Git</a
+              >
+              <p>
+                Explica commits, histórico e diferença entre Git e GitHub, com
+                exemplos.
+              </p>
+              <span class="pill">Vídeo · Fundamentos</span>
+            </div>
+          </div>
+          <div class="resource-row">
+            <svg class="dani-icon"><use href="#i-book"></use></svg>
+            <div>
+              <a
+                href="https://code.visualstudio.com/docs/editing/getting-started/editor-tutorial"
+                rel="noopener noreferrer"
+                target="_blank"
+                >VS Code — Tutorial prático oficial</a
+              >
+              <p>
+                Aprende a abrir pastas, editar, pré-visualizar e depurar um
+                projeto simples sem depender de IA.
+              </p>
+              <span class="pill">Tutorial · VS Code</span>
+            </div>
+          </div>
+          <div class="resource-row">
+            <svg class="dani-icon"><use href="#i-play"></use></svg>
+            <div>
+              <a
+                href="https://code.visualstudio.com/docs/getstarted/introvideos"
+                rel="noopener noreferrer"
+                target="_blank"
+                >VS Code — Biblioteca de vídeos oficiais</a
+              >
+              <p>
+                Introdução visual à interface e às funcionalidades do editor.
+              </p>
+              <span class="pill">Vídeos · VS Code</span>
+            </div>
+          </div>
+          <div class="resource-row">
+            <svg class="dani-icon"><use href="#i-link"></use></svg>
+            <div>
+              <a
+                href="https://docs.github.com/en/pages/getting-started-with-github-pages"
+                rel="noopener noreferrer"
+                target="_blank"
+                >GitHub Pages — Publicar o teu site</a
+              >
+              <p>
+                Documentação oficial para colocar um site estático online a
+                partir do repositório.
+              </p>
+              <span class="pill">Guia · Publicação</span>
+            </div>
+          </div>
+          <div class="lesson-challenge">
+            <h3>Como estudar um vídeo sem ficar só a ver?</h3>
+            <p>
+              Faz uma pausa após cada demonstração, repete no teu computador,
+              escreve o que mudou e tenta explicar em voz alta. Se falhares,
+              identifica o passo exato antes de pedir ajuda à IA.
+            </p>
+            <button
+              class="button"
+              data-copy="Estou a seguir um tutorial de GitHub ou VS Code e sou iniciante. Vou descrever o último passo que fiz e o resultado que apareceu. Faz-me até três perguntas de diagnóstico e dá-me apenas o próximo passo seguro, com o resultado esperado. Não assumes que executaste comandos nem me peças para partilhar credenciais."
+            >
+              Copiar prompt para desbloquear um tutorial
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html">dani ↗</a>
+      <p>Guia de aprendizagem do Dani</p>
+      <a href="#main">Voltar ao topo ↑</a>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <noscript
+      ><p>
+        Ativa JavaScript para usar os exercícios e guardar o progresso. Podes
+        continuar a ler as aulas e navegar entre páginas.
+      </p></noscript
+    >
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#111210" name="theme-color" />
+    <meta
+      content="Dani Launchpad: aprende, constrói e apresenta o teu primeiro projeto com IA."
+      name="description"
+    />
+    <title>Prompts · Dani Launchpad</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="studio.css" rel="stylesheet" />
+
+    <script defer="True" src="js/progress.js"></script>
+    <script defer="True" src="js/copy.js"></script>
+    <script defer="True" src="js/prompt-library.js"></script>
+    <script defer="True" src="js/assistant.js"></script>
+    <script defer="True" src="studio.js"></script>
+    <link href="premium.css" rel="stylesheet" />
+    <link
+      href="assets/favicon-32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="assets/icon-192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link href="assets/icon-192.png" rel="apple-touch-icon" />
+  </head>
+  <body data-page="prompts">
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-play" viewbox="0 0 24 24">
+        <path d="m8 5 12 7-12 7V5Z"></path>
+      </symbol>
+      <symbol id="i-book" viewbox="0 0 24 24">
+        <path
+          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+        ></path>
+      </symbol>
+      <symbol id="i-target" viewbox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <circle cx="12" cy="12" r="5"></circle>
+        <circle cx="12" cy="12" r="1"></circle>
+      </symbol>
+      <symbol id="i-check" viewbox="0 0 24 24">
+        <path d="m5 12 4 4L19 6"></path>
+      </symbol>
+      <symbol id="i-code" viewbox="0 0 24 24">
+        <path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-12-2 16"></path>
+      </symbol>
+      <symbol id="i-link" viewbox="0 0 24 24">
+        <path
+          d="M10 13a5 5 0 0 0 7 .3l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7-.3l-3 3a5 5 0 0 0 7 7l1.7-1.7"
+        ></path>
+      </symbol></svg
+    ><a class="skip" href="#main">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <a aria-label="Dani Launchpad, início" class="brand" href="index.html"
+        ><svg aria-hidden="true" class="brand-mark" viewbox="0 0 40 40">
+          <rect fill="currentColor" height="40" rx="12" width="40"></rect>
+          <path
+            d="M13 11h7a9 9 0 0 1 0 18h-7z"
+            fill="none"
+            stroke="#151515"
+            stroke-width="4"
+          ></path>
+          <path
+            d="m25 8 7 7m-7 0 7-7"
+            stroke="#151515"
+            stroke-width="2"
+          ></path></svg
+        ><span>dani<small>O TEU GUIA</small></span></a
+      ><span aria-hidden="true" class="nav-location">Prompts</span
+      ><button
+        aria-controls="site-nav"
+        aria-expanded="false"
+        aria-label="Abrir navegação"
+        class="menu-toggle"
+      >
+        <span class="menu-label">Menu</span
+        ><svg aria-hidden="true" viewbox="0 0 24 24">
+          <path d="M4 8h16M4 16h16"></path>
+        </svg>
+      </button>
+      <nav aria-label="Navegação principal" id="site-nav">
+        <a class="nav-link" href="index.html">Início</a
+        ><a class="nav-link" href="aprender.html">Aprender</a
+        ><a class="nav-link" href="laboratorio.html">Laboratório</a
+        ><a aria-current="page" class="nav-link" href="prompts.html">Prompts</a
+        ><a class="nav-link" href="projetos.html">Projetos</a
+        ><a class="nav-link" href="perfil.html">Perfil</a
+        ><a class="nav-link" href="entrevistas.html">Entrevistas</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <header class="page-hero">
+        <div>
+          <p class="eyebrow">Dani Launchpad <span>/ Prompts</span></p>
+          <h1>Escolhe um prompt.</h1>
+          <p class="lead">
+            Escolhe o assistente, encontra o contexto certo e adapta o prompt ao
+            teu projeto.
+          </p>
+        </div>
+        <div aria-hidden="true" class="page-number">03</div>
+      </header>
+      <div class="search-bar">
+        <label for="prompt-search">Encontrar um prompt</label
+        ><input
+          id="prompt-search"
+          placeholder="Experimenta: testar, GitHub, entrevista…"
+          type="search"
+        />
+        <p id="search-status" role="status"></p>
+      </div>
+      <div class="page-content">
+        <section class="surface section" id="assistente">
+          <div class="eyebrow">Escolhe a ferramenta</div>
+          <h2>Escolhe a IA que vais usar</h2>
+          <p>
+            Escolhe a ferramenta. Os prompts mudam automaticamente para o modo
+            de trabalho certo. Não tens de adivinhar o que escrever.
+          </p>
+          <div class="tool-grid">
+            <label
+              ><strong>Escolher assistente</strong><br /><select
+                aria-label="Escolher assistente"
+                id="tool-choice"
+              >
+                <option value="claude">Claude Code</option>
+                <option value="codex">Codex</option>
+                <option value="chatgpt">ChatGPT</option>
+              </select></label
+            >
+            <div>
+              <strong>Como funciona?</strong>
+              <p aria-live="polite" class="tool-note" id="tool-explanation"></p>
+            </div>
+          </div>
+          <p>
+            <strong>Importante:</strong> ChatGPT em modo de conversa pode
+            explicar e gerar código para copiares, mas não altera
+            automaticamente os ficheiros do teu computador. Claude Code e Codex
+            podem trabalhar nos ficheiros quando configurados e autorizados.
+          </p>
+          <div id="tool-prompts"></div>
+        </section>
+        <section class="surface section" id="biblioteca">
+          <div class="eyebrow">Biblioteca reutilizável</div>
+          <h2>Prompts &amp; boas práticas</h2>
+          <p>
+            Copia, cola na tua IA e adapta ao contexto. Cada prompt pede
+            decisões explicadas, não execução cega.
+          </p>
+          <div id="prompts"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="index.html">dani ↗</a>
+      <p>Guia de aprendizagem do Dani</p>
+      <a href="#main">Voltar ao topo ↑</a>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <noscript
+      ><p>
+        Ativa JavaScript para usar os exercícios e guardar o progresso. Podes
+        continuar a ler as aulas e navegar entre páginas.
+      </p></noscript
+    >
+  </body>
+</html>
