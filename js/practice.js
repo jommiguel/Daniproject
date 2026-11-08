@@ -12,8 +12,8 @@
     ],
     [
       "Escolhe o nome",
-      "Escreve um nome curto, por exemplo radar-candidaturas.",
-      "Repository name: radar-candidaturas",
+      "Escreve um nome curto, por exemplo primeiro-projeto.",
+      "Repository name: primeiro-projeto",
     ],
     [
       "Define a visibilidade",
@@ -100,7 +100,7 @@
   let qi = 0,
     score = 0,
     answered = false;
-  const host = document.getElementById("dani-quiz");
+  const host = document.getElementById("learning-quiz");
   function render() {
     const x = questions[qi];
     host.innerHTML = "";

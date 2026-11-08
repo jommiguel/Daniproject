@@ -474,7 +474,7 @@ a:hover {
     padding: 12px;
   }
 }
-/* Dani Studio: restrained editorial visual language */
+/* Manual: restrained editorial visual language */
 :root {
   --orange: #ffa15a;
   --ink: #090b0e;
@@ -938,7 +938,7 @@ p,
 .resource-row a {
   font-weight: 800;
 }
-.dani-icon {
+.guide-icon {
   height: 24px;
   width: 24px;
   stroke: currentColor;

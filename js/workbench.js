@@ -120,9 +120,8 @@
   });
   render();
   const tasks = {
-    form: "criar um formulário para registar uma candidatura, com empresa, função, data e estado",
-    filter:
-      "adicionar um filtro por estado (por enviar, enviada, entrevista e resposta)",
+    form: "criar um formulário para registar uma tarefa, com título, descrição, prazo e estado",
+    filter: "adicionar um filtro por estado (por fazer, em curso e concluída)",
     source:
       "criar uma secção de fontes com título, URL, data de consulta e nota de verificação",
     access:

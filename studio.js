@@ -137,36 +137,10 @@
     select.addEventListener("change", filter);
     filter();
   }
-  const projectButtons = document.querySelectorAll("[data-project]");
-  const setProject = (name) => {
-    projectButtons.forEach((button) =>
-      button.setAttribute(
-        "aria-pressed",
-        String(button.dataset.project === name),
-      ),
-    );
-    const status = document.querySelector("#project-status");
-    if (status && name)
-      status.textContent = `Projeto escolhido: ${name}. Começa por definir o problema abaixo.`;
-  };
-  setProject(read("dani-project-v1"));
-  projectButtons.forEach((button) =>
-    button.addEventListener("click", () => {
-      save("dani-project-v1", button.dataset.project);
-      setProject(button.dataset.project);
-    }),
-  );
-  const notes = document.querySelector("#project-notes");
-  if (notes) {
-    notes.value = read("dani-project-notes-v1");
-    notes.addEventListener("input", () =>
-      save("dani-project-notes-v1", notes.value),
-    );
-  }
   const answer = document.querySelector("#interview-answer");
   const question = document.querySelector("#interview-question");
   if (answer && question) {
-    const key = () => "dani-answer-v1-" + question.textContent.trim();
+    const key = () => "manual-answer-v1-" + question.textContent.trim();
     answer.value = read(key());
     answer.addEventListener("input", () => save(key(), answer.value));
     document.querySelector("#interview-next").addEventListener("click", () => {

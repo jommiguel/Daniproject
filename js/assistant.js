@@ -8,7 +8,7 @@
     [
       "github",
       "Criar o GitHub",
-      "Guia-me para criar uma conta GitHub e um repositório público chamado radar-candidaturas, com README. Explica o significado de cada opção, sem pedir palavras-passe nem dados privados.",
+      "Guia-me para criar uma conta GitHub e um repositório público chamado primeiro-projeto, com README. Explica o significado de cada opção, sem pedir palavras-passe nem dados privados.",
     ],
     [
       "vscode",
@@ -23,17 +23,17 @@
     [
       "produto",
       "Definir o MVP",
-      "Quero um Radar de Candidaturas para organizar vagas, prazos e estados. Faz-me cinco perguntas de produto, depois propõe um MVP de três funcionalidades e critérios de aceitação simples. Não cries código ainda.",
+      "Quero um Gestor de Tarefas para organizar tarefas, prazos e estados. Faz-me cinco perguntas de produto, depois propõe um MVP de três funcionalidades e critérios de aceitação simples. Não cries código ainda.",
     ],
     [
       "construir",
       "Criar o projeto",
-      "Constrói comigo o Radar de Candidaturas com HTML semântico, CSS e JavaScript vanilla. Divide em tarefas pequenas. Começa pelo formulário e lista. Explica cada ficheiro e como testar no navegador. Espera pela minha confirmação antes de avançar.",
+      "Constrói comigo o Gestor de Tarefas com HTML semântico, CSS e JavaScript vanilla. Divide em tarefas pequenas. Começa pelo formulário e lista. Explica cada ficheiro e como testar no navegador. Espera pela minha confirmação antes de avançar.",
     ],
     [
       "testar",
       "Testar e corrigir",
-      "Cria uma checklist de QA para o Radar de Candidaturas: campos vazios, texto longo, edição, filtros, localStorage, teclado, contraste, 320 px e mensagens de erro. Distingue testes sugeridos de testes efetivamente executados.",
+      "Cria uma checklist de QA para o Gestor de Tarefas: campos vazios, texto longo, edição, filtros, localStorage, teclado, contraste, 320 px e mensagens de erro. Distingue testes sugeridos de testes efetivamente executados.",
     ],
     [
       "publicar",
@@ -43,7 +43,7 @@
     [
       "entrevista",
       "Defender o projeto",
-      "Faz uma entrevista simulada de nível júnior sobre o meu Radar de Candidaturas. Uma pergunta de cada vez. Avalia clareza, decisões humanas, uso responsável da IA, testes e limitações. Não inventes experiência.",
+      "Faz uma entrevista simulada de nível júnior sobre o meu Gestor de Tarefas. Uma pergunta de cada vez. Avalia clareza, decisões humanas, uso responsável da IA, testes e limitações. Não inventes experiência.",
     ],
     [
       "academia",
@@ -52,8 +52,8 @@
     ],
     [
       "ideias",
-      "Explorar outras ideias",
-      "Compara Radar de Candidaturas, Observatório de Políticas Públicas e Radar Internacional. Avalia dificuldade, utilidade, fontes e valor numa entrevista.",
+      "Definir o primeiro projeto",
+      "Ajuda-me a escolher um problema simples para o meu primeiro projeto. Pergunta quem vai usá-lo, qual é a dificuldade atual e quais são as três funcionalidades essenciais.",
     ],
     [
       "skills",
@@ -195,12 +195,12 @@
   }
   select.addEventListener("change", () => {
     try {
-      localStorage.setItem("dani-assistant-choice", select.value);
+      localStorage.setItem("manual-assistant-choice", select.value);
     } catch {}
     build();
   });
   try {
-    const saved = localStorage.getItem("dani-assistant-choice");
+    const saved = localStorage.getItem("manual-assistant-choice");
     if (["claude", "codex", "chatgpt"].includes(saved)) select.value = saved;
   } catch {}
   build();

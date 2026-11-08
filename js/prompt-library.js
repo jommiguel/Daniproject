@@ -6,7 +6,7 @@
     ],
     [
       "Definir o problema",
-      "Quero criar um Radar de Candidaturas para organizar vagas de emprego. Ajuda-me a escrever problema, utilizador, proposta de valor, funcionalidades mínimas e critérios de sucesso. Faz perguntas quando faltar contexto. Não programes ainda.",
+      "Quero criar um Gestor de Tarefas para organizar tarefas. Ajuda-me a escrever problema, utilizador, proposta de valor, funcionalidades mínimas e critérios de sucesso. Faz perguntas quando faltar contexto. Não programes ainda.",
     ],
     [
       "Código vanilla legível",

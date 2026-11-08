@@ -13,7 +13,7 @@
     },
     {
       title: "O filtro não funciona",
-      body: "O botão “Entrevista” mostra candidaturas com outros estados. A IA diz que já corrigiu.",
+      body: "O botão “Concluídas” mostra tarefas com outros estados. A IA diz que já corrigiu.",
       options: [
         "Pedir reprodução do erro, rever alterações e testar novamente.",
         "Confiar na IA e publicar.",
@@ -90,7 +90,7 @@
   draw();
   const checks = [
     "Consigo explicar o problema e o utilizador em 30 segundos.",
-    "Criei e testei uma candidatura com dados fictícios.",
+    "Criei e testei uma tarefa com dados fictícios.",
     "Testei editar, filtrar, apagar e recarregar a página.",
     "Testei a interface com teclado e num ecrã pequeno.",
     "Revisei o código e consigo explicar uma decisão técnica.",
@@ -100,7 +100,7 @@
   ];
   const host = document.getElementById("launch-checks"),
     result = document.getElementById("launch-result"),
-    key = "dani-launch-check-v1";
+    key = "manual-launch-check-v1";
   let saved = [];
   try {
     saved = JSON.parse(localStorage.getItem(key) || "[]");

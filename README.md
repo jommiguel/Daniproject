@@ -1,15 +1,15 @@
-# Dani Launchpad
+# Manual de Projetos
 
 Academia estática em português de Portugal, preparada para publicação numa pasta. Não precisa de instalação, conta, API, servidor de aplicação ou compilação.
 
 ## Publicar no Netlify Drop
 
-1. Extrai `dani-launchpad.zip`.
+1. Extrai `manual-projetos.zip`.
 2. Abre o Netlify Drop na tua conta.
-3. Arrasta a pasta `dani-launchpad`, que contém `index.html` diretamente na raiz.
+3. Arrasta a pasta `manual-projetos`, que contém `index.html` diretamente na raiz.
 4. Quando o Netlify devolver o endereço, abre-o e confirma a navegação, os exercícios e a atualização de uma página interior.
 
-O site ainda não foi publicado por esta entrega. Não há configuração de redirecionamento necessária: as seis páginas são ficheiros HTML reais.
+O site ainda não foi publicado por esta entrega. Não há configuração de redirecionamento necessária: as cinco páginas são ficheiros HTML reais.
 
 ## Páginas
 
@@ -19,7 +19,6 @@ O site ainda não foi publicado por esta entrega. Não há configuração de red
 | aprender.html | Instalação, GitHub, VS Code, IA, produto, construção, testes e publicação |
 | laboratorio.html | Ordenação, construtor de prompts, código interativo, cenários, quiz, simulação GitHub e checklist |
 | prompts.html | Biblioteca, pesquisa e seleção de ChatGPT, Claude Code ou Codex |
-| projetos.html | Comparação de ideias, escolha e notas do problema |
 | entrevistas.html | Simulação, respostas guardadas e apresentação de cinco minutos |
 
 ## Pré-visualizar

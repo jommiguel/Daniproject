@@ -6,10 +6,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="#111210" name="theme-color" />
     <meta
-      content="Dani Launchpad: aprende, constrói e apresenta o teu primeiro projeto com IA."
+      content="Manual de Projetos: aprende, constrói e apresenta o teu primeiro projeto com IA."
       name="description"
     />
-    <title>Laboratório · Dani Launchpad</title>
+    <title>Laboratório · Manual de Projetos</title>
     <link href="favicon.svg" rel="icon" type="image/svg+xml" />
     <link href="base.css" rel="stylesheet" />
     <link href="studio.css" rel="stylesheet" />
@@ -66,21 +66,17 @@
       </symbol></svg
     ><a class="skip" href="#main">Saltar para o conteúdo</a>
     <header class="site-header">
-      <a aria-label="Dani Launchpad, início" class="brand" href="index.html"
+      <a aria-label="Manual de Projetos, início" class="brand" href="index.html"
         ><svg aria-hidden="true" class="brand-mark" viewbox="0 0 40 40">
           <rect fill="currentColor" height="40" rx="12" width="40"></rect>
           <path
-            d="M13 11h7a9 9 0 0 1 0 18h-7z"
+            d="M9 12h8l3 3 3-3h8v17h-8l-3 3-3-3H9zM20 15v17"
             fill="none"
             stroke="#151515"
-            stroke-width="4"
-          ></path>
-          <path
-            d="m25 8 7 7m-7 0 7-7"
-            stroke="#151515"
-            stroke-width="2"
+            stroke-linejoin="round"
+            stroke-width="2.5"
           ></path></svg
-        ><span>dani<small>O TEU GUIA</small></span></a
+        ><span>manual<small>COMEÇAR UM PROJETO</small></span></a
       ><span aria-hidden="true" class="nav-location">Laboratório</span
       ><button
         aria-controls="site-nav"
@@ -99,14 +95,13 @@
         ><a aria-current="page" class="nav-link" href="laboratorio.html"
           >Laboratório</a
         ><a class="nav-link" href="prompts.html">Prompts</a
-        ><a class="nav-link" href="projetos.html">Projetos</a
         ><a class="nav-link" href="entrevistas.html">Entrevistas</a>
       </nav>
     </header>
     <main id="main" tabindex="-1">
       <header class="page-hero">
         <div>
-          <p class="eyebrow">Dani Launchpad <span>/ Laboratório</span></p>
+          <p class="eyebrow">Manual de Projetos <span>/ Laboratório</span></p>
           <h1>Pratica com exercícios.</h1>
           <p class="lead">
             Aqui podes mexer à vontade. São simulações de treino, sem contas nem
@@ -160,7 +155,7 @@
           class="surface section"
           id="laboratorio"
         >
-          <div class="eyebrow">Dani Studio / Laboratório interativo</div>
+          <div class="eyebrow">Manual / Laboratório interativo</div>
           <h2 id="lab-title">Aprender com as mãos. Não decorar comandos.</h2>
           <p>
             Três exercícios reais para perceberes a lógica de um projeto. Podes
@@ -241,8 +236,8 @@
                 max-width: 650px;
               "
             >
-              <option value="form">Formulário para guardar candidaturas</option>
-              <option value="filter">Filtro por estado da candidatura</option>
+              <option value="form">Formulário para guardar tarefas</option>
+              <option value="filter">Filtro por estado da tarefa</option>
               <option value="source">
                 Registo de fontes para políticas públicas
               </option>
@@ -307,9 +302,9 @@
                   ><input
                     id="demo-label"
                     maxlength="40"
-                    value="Guardar candidatura"
+                    value="Guardar tarefa"
                   /><button id="demo-action" type="button">
-                    Guardar candidatura
+                    Guardar tarefa
                   </button>
                   <p id="demo-result" role="status">
                     Experimenta clicar no botão.
@@ -327,7 +322,7 @@
           <div class="track-grid">
             <div class="track-item">
               <span class="index">01 / MVP</span
-              ><strong>Registar candidaturas</strong
+              ><strong>Registar tarefas</strong
               ><small>Formulário, lista, estado e armazenamento local.</small>
             </div>
             <div class="track-item">
@@ -359,7 +354,7 @@
           <div class="eyebrow">MISSÃO INTERATIVA · 06</div>
           <h2>Escolhe a melhor solução</h2>
           <p>
-            Estás a construir o Radar de Candidaturas. Escolhe a decisão que
+            Estás a construir o Gestor de Tarefas. Escolhe a decisão que
             tomarias em cada situação e descobre a consequência. Lê cada
             situação, escolhe uma resposta e vê a explicação.
           </p>
@@ -419,7 +414,7 @@
           <h3 style="margin-top: 24px">
             Teste rápido: Git, IA e boas práticas
           </h3>
-          <div aria-live="polite" id="dani-quiz"></div>
+          <div aria-live="polite" id="learning-quiz"></div>
         </section>
         <section class="surface section" id="check-final">
           <div class="eyebrow">CHECKPOINT · Antes de mostrar a alguém</div>
@@ -435,8 +430,8 @@
       </div>
     </main>
     <footer class="site-footer">
-      <a class="brand" href="index.html">dani ↗</a>
-      <p>Guia de aprendizagem do Dani</p>
+      <a class="brand" href="index.html">manual ↗</a>
+      <p>Manual de aprendizagem</p>
       <a href="#main">Voltar ao topo ↑</a>
     </footer>
     <div class="toast" id="toast" role="status"></div>

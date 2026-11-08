@@ -1,6 +1,6 @@
 (() => {
   const taskCount = 43;
-  const key = "dani-launchpad-v2";
+  const key = "manual-projetos-v2";
   const links = [
     ...Array(4).fill("aprender.html#preparar"),
     ...Array(4).fill("aprender.html#github"),
