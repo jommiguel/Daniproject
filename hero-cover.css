@@ -1,0 +1,128 @@
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 640px;
+  margin: 32px 0 64px;
+  padding: 64px;
+  overflow: hidden;
+  border: 1px solid #48433b;
+  border-radius: 24px;
+  background: #191815;
+}
+.home-hero > div:first-child {
+  position: relative;
+  z-index: 3;
+  width: 60%;
+}
+.home-hero .hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  pointer-events: none;
+}
+.home-hero .motion-image-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.home-hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: 65% center;
+  border-radius: 0;
+  translate: var(--hero-x, 0px) var(--hero-y, 0px);
+  transition: translate 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    #151513 0%,
+    #151513f5 32%,
+    #151513e8 53%,
+    #15151342 80%,
+    #15151305 100%
+  );
+}
+body[data-page="index"] .home-hero h1 {
+  max-width: 640px;
+  font-size: clamp(48px, 5.5vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+.home-hero h1 span {
+  color: #ffb080;
+}
+.home-hero .lead {
+  max-width: 440px;
+  color: #f1eee9;
+}
+.home-hero .eyebrow {
+  color: #ffb080;
+}
+.home-hero .eyebrow span {
+  color: #eee9e2;
+}
+.home-hero figcaption {
+  display: none;
+}
+@media (max-width: 800px) {
+  .home-hero {
+    min-height: 650px;
+    margin: 24px 0 40px;
+    padding: 40px;
+    align-items: flex-end;
+  }
+  .home-hero > div:first-child {
+    width: 100%;
+  }
+  .home-hero::after {
+    background: linear-gradient(
+      0deg,
+      #151513 0%,
+      #151513f5 42%,
+      #151513d9 60%,
+      #15151318 100%
+    );
+  }
+  .home-hero .hero-image img {
+    object-position: 65% top;
+  }
+  body[data-page="index"] .home-hero h1 {
+    font-size: clamp(44px, 8vw, 64px);
+    max-width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 28px 24px;
+    min-height: 650px;
+    border-radius: 16px;
+  }
+  .home-hero .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+  }
+  .home-hero .eyebrow span {
+    display: none;
+  }
+  .home-hero .lead {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero .hero-image img {
+    translate: none;
+    transition: none;
+  }
+}

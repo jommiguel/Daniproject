@@ -11,7 +11,7 @@
   const seen = new WeakSet();
   const targets = [
     ...document.querySelectorAll(
-      ".page-hero > div:first-child > *, .hero-image, .dashboard-progress > *, .section-heading, .destination, .page-content > section > .eyebrow, .page-content > section > h2, .page-content > section > p, .lesson-panel, .interactive-workbench, .track-item, .motion-demo > div:first-child, .search-bar, .site-footer",
+      ".page-hero > div:first-child > *, .page-hero:not(.home-hero) .hero-image, .dashboard-progress > *, .section-heading, .destination, .page-content > section > .eyebrow, .page-content > section > h2, .page-content > section > p, .lesson-panel, .interactive-workbench, .track-item, .motion-demo > div:first-child, .search-bar, .site-footer",
     ),
   ];
   const images = [...document.querySelectorAll(".hero-image > img")].map(
